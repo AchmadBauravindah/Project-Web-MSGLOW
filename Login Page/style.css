@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+/*Inisialisasi Font*/
+@font-face {
+    font-family: "DMSerif";
+    src: url(DMSerifText-Regular.ttf);
+}
+
+body {
+
+    background-color: #708090;
+    font-family: "Source Sans Pro", "DMSerif", Arial;
+
+}
+
+.Logo {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+div.login-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 280px;
+}
+
+div.username-box {
+    padding: 8px 0;
+    margin: 8px 0;
+    font-size: 30px;
+}
+
+div.password-box {
+    padding: 8px 0;
+    margin: 8px 0;
+}
