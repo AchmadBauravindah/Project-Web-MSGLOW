@@ -1,0 +1,64 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+body {}
+
+div.header {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.header h1 {
+    text-align: center;
+    font-size: 30pt;
+}
+
+.btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    width: 80%;
+}
+
+div.admin-btn {
+    float: left;
+}
+
+div.guest-btn {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box.smart_pdbox {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    background: #fff;
+}
