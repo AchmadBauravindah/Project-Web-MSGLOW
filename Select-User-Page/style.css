@@ -1,7 +1,8 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-
-body {}
+body {
+    background-color: ivory;
+}
 
 div.header {
     position: absolute;
@@ -13,22 +14,57 @@ div.header {
 div.header h1 {
     text-align: center;
     font-size: 30pt;
+    color: rgb(66, 63, 63);
 }
 
 .btn {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 60%;
+    top: 70%;
     left: 50%;
     width: 80%;
 }
 
+.btn p {
+    color: rgb(245, 118, 118);
+    font-size: large;
+    margin-bottom: 70px;
+}
+
 div.admin-btn {
+    width: 30%;
+    height: 250px;
     float: left;
+    border: 3px solid rgb(66, 63, 63);
+    padding: 10px;
+    background-color: rgb(245, 118, 118);
+    cursor: pointer;
+}
+
+.admin-btn:hover {
+    background: grey;
+    font-style: bold;
+}
+
+div.admin-btn h1,
+div.guest-btn h1 {
+    text-align: center;
+    padding-top: 75px;
 }
 
 div.guest-btn {
+    width: 30%;
+    height: 250px;
     float: right;
+    border: 3px solid rgb(66, 63, 63);
+    padding: 10px;
+    background-color: rgb(245, 118, 118);
+    cursor: pointer;
+}
+
+.guest-btn:hover {
+    background: grey;
+    font-style: bold;
 }
 
 
