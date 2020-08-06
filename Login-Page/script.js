@@ -31,3 +31,6 @@ function checkAll() {
         return false;
     }
 }
+
+// Catatan: setelah ini buat list gini loh a=[A:a,B:b], ini namanya apa
+// aku lupa :v, buat gini agar username dan pass bisa matching
