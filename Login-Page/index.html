@@ -15,16 +15,17 @@
             <div class="text-box">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <input class="user-box" type="text" id="Username" placeholder="Username"
-                    onclick="hide_required_name();">
+                    onkeypress="hide_required_name();">
                 <span class="hidden" id="Name_Required">Name is a required field</span>
             </div>
             <!-- Bagian Password -->
             <div class="text-box">
                 <i class="fa fa-lock" aria-hidden="true"></i>
                 <input class="pass-box" type="password" id="Password" placeholder="Password"
-                    onclick="hide_required_password();">
+                    onkeypress="hide_required_password();">
                 <span class="hidden" id="Password_Required">Password is a required field</span>
             </div>
+            <span class="hidden" id="Wrong_Username_Password">Username and Password are Wrong</span>
             <!-- Bagian tombol submit -->
             <input class="btn-login" type="submit" name="btn-login" id="btn-login" value="Login as Admin">
         </form>
