@@ -16,10 +16,15 @@ body {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* Transform digunakan untuk meletakan gambar ke tengah, karena
+    jarak top dan left 30 sama 50 maka transformnya digunakan 
+    sebagai pengurangan dari jarak top dan left */
     position: absolute;
     border-bottom: 3px solid rgb(97, 96, 96);
-    padding: 13px 0;
+    padding: 13px 0px;
     overflow: hidden;
+    /*Overflow hidden digunakan agar isian didalam section/div itu 
+    ga keluar dari lembaran div*/
 }
 
 div.login-box {
@@ -27,6 +32,10 @@ div.login-box {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    /* Position absolute artinya posisi lembaran div itu dianggap
+    tidak ada oleh lembaran div lainya, jadi jika terjadi tabrakan
+    maka posisiton absolute gaperduli apakah lembaran tersebut
+    tabrakan atau tidak */
     width: 280px;
     color: rgb(48, 46, 46);
 }
@@ -35,8 +44,8 @@ div.text-box {
 
     overflow: hidden;
     width: 100%;
-    padding: 8px 0;
-    margin: 8px 0;
+    padding: 8px 0px;
+    margin: 8px 0px;
     font-size: 30px;
     border-bottom: 1px solid rgb(48, 46, 46);
 }
@@ -71,6 +80,6 @@ div.text-box input {
     padding: 5px;
     font-size: 18px;
     cursor: pointer;
-    margin: 12px 0;
+    margin: 12px 0px;
     margin-top: 35px;
 }
