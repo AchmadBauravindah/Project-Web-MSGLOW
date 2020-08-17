@@ -59,7 +59,7 @@ function hide_required_name() {
 }
 
 function hide_required_password() {
-    document.getElementById('Name_Required').style.visibility = "hidden";
+    document.getElementById('Password_Required').style.visibility = "hidden";
 }
 
 
@@ -76,7 +76,7 @@ function checkAll() {
     if (Valid_Name == true && Valid_Password == true && R_Name == true && R_Password == true) {
         return true;
     } else {
-        alert("Username atau Password yang anda masukan salah!")
+        // alert("Username atau Password yang anda masukan salah!")
         return false;
     }
 }
