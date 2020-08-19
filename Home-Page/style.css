@@ -32,27 +32,33 @@ div.headerstackkuadrat {
     height: 70px;
     background-color: #5e5e5e;
     padding: 5px;
+    /* Border radius digunakan agar border pojok tidak runcing */
+    border-radius: 3px;
 }
 
 div.headerstackkuadrat h1 {
     text-align: center;
     vertical-align: center;
-    color: #ec3170;
+    color: silver;
+
 }
 
 div.menu {
     margin: 1%;
     padding: 5%;
     text-align: center;
+    color: #5e5e5e;
 }
 
-div.menu div:hover {
-    color: black;
+div.menu i {
+    color: #5e5e5e;
 }
 
-div.home,
-div.products,
-div.testimoni {
+div.menu i:hover {
+    color: #ec3170;
+}
+
+div.icon-menu {
     vertical-align: middle;
     color: white;
     font-size: 20px;
@@ -61,20 +67,17 @@ div.testimoni {
     padding-right: 20px;
 }
 
-div.home img,
-div.products img,
-div.testimoni img {
+div.icon-menu img {
     width: 20px;
 }
 
 div.content {
     width: auto;
-    height: 100%;
-    padding-left: 15px;
-    padding-right: 10px;
+    height: auto;
+    padding: 15px;
     margin: 1%;
-    height: 780px;
-    border: 1px solid black;
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
     background-color: white;
     position: relative;
 }
