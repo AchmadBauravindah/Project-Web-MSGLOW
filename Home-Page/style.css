@@ -1,0 +1,194 @@
+body {
+    background-color: rgb(144, 144, 144);
+    font-family: Lato, Serif, Arial;
+    margin: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+div.box {
+    box-shadow: 5px 0px 15px, -5px 0px 15px;
+    background-color: #d1d1d1;
+    margin: 5%;
+}
+
+div.header {
+    background-color: white;
+    padding: 1px;
+}
+
+div.headerstack {
+    background-color: #ec3170;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+div.header h2 {
+    color: white;
+}
+
+div.headerstackkuadrat {
+    height: 70px;
+    background-color: #5e5e5e;
+    padding: 5px;
+}
+
+div.headerstackkuadrat h1 {
+    text-align: center;
+    vertical-align: center;
+    color: #ec3170;
+}
+
+div.menu {
+    margin: 1%;
+    padding: 5%;
+    text-align: center;
+}
+
+div.menu div:hover {
+    color: black;
+}
+
+div.home,
+div.products,
+div.testimoni {
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+div.home img,
+div.products img,
+div.testimoni img {
+    width: 20px;
+}
+
+div.content {
+    width: auto;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 10px;
+    margin: 1%;
+    height: 780px;
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+}
+
+div.sidebar {
+    margin: 5px;
+    border: 1px dashed black;
+    background-color: #FFA07A;
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+div.footer {
+    margin: 5px;
+    border: 1px dashed black;
+    background-color: #FFA07A;
+    text-align: center;
+    clear: both;
+    height: 50px;
+}
+
+div.Register {
+    border: 4px solid red;
+    height: 240px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+div.Register h2 {
+    height: 30px;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: red;
+}
+
+div.Register p {
+    margin: 10px;
+}
+
+div.Useful {
+    border: 4px solid red;
+    height: 280px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+div.Useful h2 {
+    height: 30px;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: red;
+}
+
+div.Useful p {
+    margin: 10px;
+}
+
+div.CallCenter {
+    border: 4px solid red;
+    height: 160px;
+    background: white;
+}
+
+div.CallCenter h2 {
+    height: 30px;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: red;
+}
+
+div.CallCenter p {
+    margin: 10px;
+}
+
+.fontpersonaldetails {
+    font-weight: bold;
+}
+
+fieldset {
+    background-color: #FFA07A;
+}
+
+.biar_ke_kiri_label,
+.editsubmit {
+    float: left;
+    margin-bottom: 15px;
+}
+
+.biar_ke_kanan_input,
+.editreset {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.editsubmit,
+.editreset {
+    width: 120px;
+}
+
+.tipelist {
+    list-style-type: disc;
+}
