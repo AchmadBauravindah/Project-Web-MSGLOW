@@ -13,7 +13,7 @@
         <!--HEADER ini dibuat dengan tumpukan-tumpukan dari css-->
         <div class="header">
             <div class="headerstack">
-                <img src="./images/logo.png">
+                <img src="./images/logo.png" alt="Logo">
                 <div class="headerstackkuadrat">
                     <h1>PEARLINDAH</h1>
                 </div>
@@ -62,7 +62,7 @@
                     </div>
                 </a>
                 <!-- About Us -->
-                <a href="#About-Us" font>
+                <a href="#About-Us">
                     <div class="icon-menu">
                         <img src="./images/about-us.png" alt="About Us">
                         <br><i>About Us</i>
@@ -116,7 +116,7 @@
                     <!-- PAKET MSGLOW -->
                     <h2>Paket MS Glow Beauty</h2>
                     <!-- MS Glow Whitening Series -->
-                    <a href="https:/fb.com">
+                    <a href="#Pemesanan">
                         <div class="product-table">
                             <img src="./images/whitening-paket.png" alt="whitening-paket">
                             <div>
@@ -150,7 +150,7 @@
                         <div class="product-table">
                             <img src="./images/luminous-paket.png" alt="luminous-paket">
                             <div>
-                                <i>MS Glow Whitening Series</i><br>
+                                <i>MS Glow Luminous Series</i><br>
                                 <p class="harga-text">Rp. 300.000</p>
                             </div>
                         </div>
@@ -212,34 +212,101 @@
         <!--SideBar-->
         <div class="sidebar">
             <!-- HALAMAN PEMESANAN -->
-            <div class="pemesanan">
+            <div class="pemesanan" id="Halaman_Pemesanan">
                 <h2>Halaman Pemesanan</h2>
                 <!--FORM Pemesanan-->
-                <form action="submit.html" method="post" id="Pemesanan" name="Pemesanan">
+                <form action="submit.html" method="post" id="Pemesanan" name="Pemesanan" onsubmit="return checkAll();">
+                    <!-- NAMA -->
                     <div class="nama">
                         <label for="Nama">Nama : </label>
-                        <input type="text">
+                        <input onkeypress="hide_required_nama();" type="text" id="Nama">
+                        <br>
+                        <span class="fill_it" id="Nama_Required">Harap isi bidang ini!</span>
+                        <span class="tes1"></span>
+
                     </div>
+                    <!-- EMAIL -->
+                    <div class="email">
+                        <label for="Email">E-Mail : </label>
+                        <input onkeypress="hide_required_email();" type="text" id="Email">
+                        <br>
+                        <span class="fill_it" id="Email_Required">Harap isi bidang ini!</span>
+                        <span class="tes1">Tes</span>
+
+                    </div>
+                    <!-- NOMER HP -->
+                    <div class="nomer_hp">
+                        <label for="No_HP">No. HP : </label>
+                        <input onkeypress="hide_required_nomer_hp();" type="text" id="Nomer_HP">
+                        <br>
+                        <span class="fill_it" id="Nomer_HP_Required">Harap isi bidang ini!</span>
+                        <span class="tes1">Tes</span>
+                    </div>
+                    <!-- JENIS PRODUK -->
+                    <div class="jenis_produk">
+                        <label for="Jenis_Produk">Jenis Produk : </label>
+                        <select name="Jenis_Produk" id="Jenis_Produk" onclick="hide_required_jenis_produk();">
+                            <option value="">--Products MSGLOW--</option>
+                            <option value="1">Paket Whitening Series</option>
+                            <option value="2">Paket Acne Series</option>
+                            <option value="3">Paket Ultimate Series</option>
+                            <option value="4">Paket Luminous Series</option>
+                            <option value="5">Serum Acne</option>
+                            <option value="6">Serum Lifting</option>
+                            <option value="7">Serum Luminous</option>
+                            <option value="8">Serum Peeling</option>
+                        </select>
+                        <br>
+                        <span class="fill_it" id="Jenis_Produk_Required">Harap isi bidang ini!</span>
+                        <span class="tes1">Tes</span>
+                    </div>
+                    <!-- JUMLAH PRODUK -->
+                    <div class="jumlah_produk">
+                        <label for="Jumlah_Produk">Jumlah Produk : </label>
+                        <input onkeypress="hide_required_jumlah_produk();" type="text" id="Jumlah_Produk">
+                        <br>
+                        <span class="fill_it" id="Jumlah_Produk_Required">Harap isi bidang ini!</span>
+                        <span class="tes1">Tes</span>
+                    </div>
+                    <!-- JENIS PENGIRIMAN -->
+                    <div class="jenis_pengiriman">
+                        <label for="Jenis_Pengiriman">Jenis Pengiriman : </label>
+                        <div class="opsi_jenis_pengiriman">
+                            <input onclick="hide_required_jenis_pengiriman();" type="radio" name="Jenis_Pengiriman"
+                                id="Jenis_Pengiriman"><i>J&T</i>
+                            <input onclick="hide_required_jenis_pengiriman();" type="radio"
+                                name="Jenis_Pengiriman"><i>JNE</i>
+                            <input onclick="hide_required_jenis_pengiriman();" type="radio"
+                                name="Jenis_Pengiriman"><i>COD</i>
+                        </div>
+                        <br>
+                        <span class="fill_it" id="Jenis_Pengiriman_Required">Harap isi bidang ini!</span>
+                        <span class="tes1">Tes</span>
+                    </div>
+                    <!-- ALAMAT -->
                     <div class="alamat">
                         <label for="Alamat">Alamat : </label>
                     </div>
+
                     <div class="text-alamat">
-                        <textarea name="Alamat" id="Alamat" cols="30" rows="1"></textarea>
+                        <textarea name="Alamat" id="Alamat" cols="30" rows="3"
+                            onkeypress="hide_required_alamat();"></textarea>
+                        <br>
+                        <span class="fill_it" id="Alamat_Required">Harap isi bidang ini!</span>
+                        <span class="tes1">Tes</span>
                     </div>
-                    <div class="nomer_hp">
-                        <label for="No_HP">No. HP : </label>
-                    </div>
-                    <div class="jenis_produk">
-                        <label for="Jenis_Produk">Jenis Produk : </label>
-                    </div>
-                    <div class="jumlah_produk">
-                        <label for="Jumlah_Produk">Jumlah Produk : </label>
-                    </div>
-                    <div class="jenis_pengiriman">
-                        <label for="Jenis_Pengiriman">Jenis Pengiriman : </label>
-                    </div>
+                    <!-- APAKAH ANDA YAKIN -->
                     <div class="apakah_yakin">
                         <label for="Apakah_Yakin">Apakah Anda Yakin?</label>
+                        <input onclick="hide_required_yakin();" type="checkbox" id="Apakah_Yakin" name="Apakah_Yakin">
+                        <br>
+                        <span class="fill_it" id="Apakah_Yakin_Required">Harap isi bidang ini!</span>
+                        <span class="tes1">Tes</span>
+                    </div>
+
+                    <div class="submit-pemesanan">
+                        <input onkeypress="hide_required_password();" type="submit" value="Pesan">
+                        <input onkeypress="hide_required_password();" type="reset" value="Batalkan Pesanan">
                     </div>
                 </form>
             </div>
@@ -248,6 +315,7 @@
             <p>@ Informatics Departement - University of Trunojoyo Madura</p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

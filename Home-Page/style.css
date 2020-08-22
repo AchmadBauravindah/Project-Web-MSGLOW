@@ -148,7 +148,7 @@ div.products img {
 }
 
 .product-content h2 {
-    display: inline;
+    /* display: inline; */
     color: #494949;
 }
 
@@ -192,20 +192,15 @@ div.sidebar {
     position: relative;
 }
 
-div.footer {
-    margin: 5px;
-    border: 1px dashed black;
-    background-color: #FFA07A;
-    text-align: center;
-    clear: both;
-    height: 50px;
-}
-
 div.pemesanan {
     border: 4px solid #ec3170;
-    height: 240px;
+    height: auto;
     background: #d1d1d1;
     margin-bottom: 10px;
+}
+
+div.pemesanan form {
+    padding: 5px;
 }
 
 div.pemesanan h2 {
@@ -223,84 +218,74 @@ div.pemesanan p {
     margin: 10px;
 }
 
-/* div.Useful {
-    border: 4px solid red;
-    height: 280px;
-    background: white;
-    margin-bottom: 10px;
-}
-
-div.Useful h2 {
-    height: 30px;
-    margin-top: 0px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    background-color: red;
-}
-
-div.Useful p {
-    margin: 10px;
-}
-
-div.CallCenter {
-    border: 4px solid red;
-    height: 160px;
-    background: white;
-}
-
-div.CallCenter h2 {
-    height: 30px;
-    margin-top: 0px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    background-color: red;
-}
-
-div.CallCenter p {
-    margin: 10px;
-} */
-
-/* .fontpersonaldetails {
-    font-weight: bold;
-}
-
-fieldset {
-    background-color: #FFA07A;
-}
-
-.biar_ke_kiri_label,
-.editsubmit {
-    float: left;
-    margin-bottom: 15px;
-}
-
-.biar_ke_kanan_input,
-.editreset {
-    float: right;
-    margin-right: 10px;
-    margin-bottom: 15px;
-}
-
-.editsubmit,
-.editreset {
-    width: 120px;
-} */
-
-.tipelist {
-    list-style-type: disc;
-}
-
-.alamat {
+div.alamat {
     float: left;
     width: 10%;
 }
 
-.tes2 {
-    float: left;
+/* EDIT INPUT FORM PEMESANAN */
+div.nama input {
+    float: right;
+    margin-right: 380px;
+    width: 200px;
+}
+
+div.email input {
+    float: right;
+    margin-right: 380px;
+    width: 200px;
+}
+
+div.nomer_hp input {
+    float: right;
+    margin-right: 380px;
+    width: 200px;
+}
+
+div.jenis_produk select {
+    margin-left: 62px;
+    width: 208px;
+}
+
+div.jumlah_produk input {
+    float: right;
+    margin-right: 380px;
+    width: 200px;
+}
+
+div.opsi_jenis_pengiriman {
+    display: inline;
+    margin-left: 25px;
+}
+
+div.text-alamat textarea {
+    margin-left: 85px;
+}
+
+div.apakah_yakin input {
+    margin-left: 15px;
+}
+
+
+/* Buat Requirednya */
+span.fill_it {
+    visibility: hidden;
+    margin-left: 165px;
+    position: absolute;
+    color: #ec3170;
+}
+
+span.tes1 {
+    margin-left: 165px;
+    visibility: hidden;
+    color: #ec3170;
+}
+
+div.footer {
+    margin: 5px;
+    border: 1px dashed black;
+    background-color: #FFA07A;
+    text-align: center;
+    clear: both;
+    height: 50px;
 }
