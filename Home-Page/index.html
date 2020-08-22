@@ -222,25 +222,25 @@
                         <input onkeypress="hide_required_nama();" type="text" id="Nama">
                         <br>
                         <span class="fill_it" id="Nama_Required">Harap isi bidang ini!</span>
-                        <span class="tes1"></span>
+                        <span class="Validasi_Input"></span>
 
                     </div>
                     <!-- EMAIL -->
                     <div class="email">
                         <label for="Email">E-Mail : </label>
-                        <input onkeypress="hide_required_email();" type="text" id="Email">
+                        <input onkeypress="hide_required_email(); hide_validasi_email();" type="text" id="Email">
                         <br>
                         <span class="fill_it" id="Email_Required">Harap isi bidang ini!</span>
-                        <span class="tes1">Tes</span>
+                        <span class="Validasi_Input" id="Email_Validasi">Masukan Alamat E-Mail dengan Benar</span>
 
                     </div>
                     <!-- NOMER HP -->
                     <div class="nomer_hp">
                         <label for="No_HP">No. HP : </label>
-                        <input onkeypress="hide_required_nomer_hp();" type="text" id="Nomer_HP">
+                        <input onkeypress="hide_required_nomer_hp(); hide_validasi_nomer_hp();" type="text" id="Nomer_HP">
                         <br>
                         <span class="fill_it" id="Nomer_HP_Required">Harap isi bidang ini!</span>
-                        <span class="tes1">Tes</span>
+                        <span class="Validasi_Input" id="Nomer_HP_Validasi">Hanya Masukan Nomer</span>
                     </div>
                     <!-- JENIS PRODUK -->
                     <div class="jenis_produk">
@@ -258,15 +258,15 @@
                         </select>
                         <br>
                         <span class="fill_it" id="Jenis_Produk_Required">Harap isi bidang ini!</span>
-                        <span class="tes1">Tes</span>
+                        <span class="Validasi_Input"></span>
                     </div>
                     <!-- JUMLAH PRODUK -->
                     <div class="jumlah_produk">
                         <label for="Jumlah_Produk">Jumlah Produk : </label>
-                        <input onkeypress="hide_required_jumlah_produk();" type="text" id="Jumlah_Produk">
+                        <input onkeypress="hide_required_jumlah_produk(); hide_validasi_jumlah_produk();" type="text" id="Jumlah_Produk">
                         <br>
                         <span class="fill_it" id="Jumlah_Produk_Required">Harap isi bidang ini!</span>
-                        <span class="tes1">Tes</span>
+                        <span class="Validasi_Input" id="Jumlah_Produk_Validasi">Hanya Masukan Nomer</span>
                     </div>
                     <!-- JENIS PENGIRIMAN -->
                     <div class="jenis_pengiriman">
@@ -281,7 +281,7 @@
                         </div>
                         <br>
                         <span class="fill_it" id="Jenis_Pengiriman_Required">Harap isi bidang ini!</span>
-                        <span class="tes1">Tes</span>
+                        <span class="Validasi_Input"></span>
                     </div>
                     <!-- ALAMAT -->
                     <div class="alamat">
@@ -293,7 +293,7 @@
                             onkeypress="hide_required_alamat();"></textarea>
                         <br>
                         <span class="fill_it" id="Alamat_Required">Harap isi bidang ini!</span>
-                        <span class="tes1">Tes</span>
+                        <span class="Validasi_Input"></span>
                     </div>
                     <!-- APAKAH ANDA YAKIN -->
                     <div class="apakah_yakin">
@@ -301,12 +301,12 @@
                         <input onclick="hide_required_yakin();" type="checkbox" id="Apakah_Yakin" name="Apakah_Yakin">
                         <br>
                         <span class="fill_it" id="Apakah_Yakin_Required">Harap isi bidang ini!</span>
-                        <span class="tes1">Tes</span>
+                        <span class="Validasi_Input"></span>
                     </div>
 
                     <div class="submit-pemesanan">
-                        <input onkeypress="hide_required_password();" type="submit" value="Pesan">
-                        <input onkeypress="hide_required_password();" type="reset" value="Batalkan Pesanan">
+                        <input type="submit" value="Pesan">
+                        <input type="reset" value="Batalkan Pesanan">
                     </div>
                 </form>
             </div>
