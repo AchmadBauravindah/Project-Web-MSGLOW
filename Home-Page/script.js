@@ -1,24 +1,3 @@
-// // Ini adalah bagian untuk mengecek bagian nama apakah valid
-// function checkName() {
-//     let V_Name = document.getElementById("Username").value;
-//     if (V_Name = "admin") {
-//         return true
-//     } else {
-//         return false
-//     }
-
-// }
-
-// // Ini adalah bagian mengecek password
-// function checkPassword() {
-//     let V_Password = document.getElementById("Password").value;
-//     if (V_Password == "admin") {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-
 // Membuat Requirednya
 // Requir_Name Dibuat untuk mengecek apakah isian Username sudah diisi atau belum
 function Requir_Name() {
