@@ -4,69 +4,69 @@ function Validasi_Email() {
     // console.log(Email_Value)
     let Cek_Email = false;
     // Mengecek dulu apakah email sudah terisi atau belum
-    if (R_Email==false){
+    if (R_Email == false) {
         return false;
     }
     for (let i = 0; i < Email_Value.length; i++) {
-        if (Email_Value[i] == "@"){
-            Cek_Email=true;
-        } 
+        if (Email_Value[i] == "@") {
+            Cek_Email = true;
+        }
     }
-    if (Cek_Email==false){
+    if (Cek_Email == false) {
         document.getElementById("Email_Validasi").style.visibility = "visible";
         document.Pemesanan.Email.focus();
         return false;
-    }else{
+    } else {
         return true;
     }
 }
 
 
-function Validasi_Nomer_HP(){
+function Validasi_Nomer_HP() {
     let Nomer_HP_Value = document.getElementById("Nomer_HP").value;
     let R_No_HP = Requir_No_HP();
     let Cek_Nomer_HP = true;
     // Mengecek dulu apakah isian No_HP sudah terisi atau belum
-    if (R_No_HP==false){
+    if (R_No_HP == false) {
         return false;
     }
-	for (i=0; i < Nomer_HP_Value.length; i++) {
-		allowed = /^\d$/g;
-		if (allowed.test(Nomer_HP_Value[i]) == false) {
+    for (let i = 0; i < Nomer_HP_Value.length; i++) {
+        let allowed = /^\d$/g;
+        if (allowed.test(Nomer_HP_Value[i]) == false) {
             Cek_Nomer_HP = false;
             break;
-            }
+        }
     }
-    if (Cek_Nomer_HP==false){
+    if (Cek_Nomer_HP == false) {
         document.getElementById("Nomer_HP_Validasi").style.visibility = "visible";
         document.Pemesanan.Nomer_HP.focus();
         return false;
-    }else{
+    } else {
         return true;
     }
 
 }
 
-function Validasi_Jumlah_Produk(){
+function Validasi_Jumlah_Produk() {
     let Jumlah_Produk_Value = document.getElementById("Jumlah_Produk").value;
     let R_Jumlah_Produk = Requir_Jumlah_Produk();
     let Cek_Jumlah_Produk = true;
     // Mengecek dulu apakah isian Jumlah Produk sudah terisi atau belum
-    if (R_Jumlah_Produk==false){
+    if (R_Jumlah_Produk == false) {
         return false;
     }
-	for (i=0; i < Jumlah_Produk_Value.length; i++) {
-		allowed = /^\d$/g;
-		if (allowed.test(Jumlah_Produk_Value[i]) == false) {
+    for (let i = 0; i < Jumlah_Produk_Value.length; i++) {
+        let allowed = /^\d$/g;
+        if (allowed.test(Jumlah_Produk_Value[i]) == false) {
             Cek_Jumlah_Produk = false;
             break;
-            }
+        }
     }
-    if (Cek_Jumlah_Produk==false){
+    if (Cek_Jumlah_Produk == false) {
         document.getElementById("Jumlah_Produk_Validasi").style.visibility = "visible";
         document.Pemesanan.Jumlah_Produk.focus();
         return false;
-    }else{
+    } else {
         return true;
     }
 
@@ -75,9 +75,11 @@ function Validasi_Jumlah_Produk(){
 function hide_validasi_email() {
     document.getElementById('Email_Validasi').style.visibility = "hidden";
 }
+
 function hide_validasi_nomer_hp() {
     document.getElementById('Nomer_HP_Validasi').style.visibility = "hidden";
 }
+
 function hide_validasi_jumlah_produk() {
     document.getElementById('Jumlah_Produk_Validasi').style.visibility = "hidden";
 }
@@ -144,7 +146,7 @@ function Requir_Jenis_Pengiriman() {
     let selectValue = false;
     for (let i = 0; i < Selection.length; i++) {
         if (Selection[i].checked == true) {
-            console.log(Selection[i],"Yes")
+            console.log(Selection[i], "Yes")
             selectValue = true;
         }
     }
@@ -243,15 +245,15 @@ function checkRequired() {
     }
 }
 
-function checkAll(){
+function checkAll() {
     let CR = checkRequired();
     let Valid_Email = Validasi_Email();
     let Valid_Nomer_HP = Validasi_Nomer_HP();
     let Valid_Jumlah_Produk = Validasi_Jumlah_Produk();
-    if (CR==true && Valid_Email==true && Valid_Nomer_HP==true && Valid_Jumlah_Produk==true){
+    if (CR == true && Valid_Email == true && Valid_Nomer_HP == true && Valid_Jumlah_Produk == true) {
         alert("dh")
         return true;
-    }else {
+    } else {
         return false;
     }
 }

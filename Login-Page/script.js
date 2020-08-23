@@ -1,10 +1,10 @@
 // Ini adalah bagian untuk mengecek bagian nama apakah valid
 function checkName() {
     let V_Name = document.getElementById("Username").value;
-    if (V_Name = "admin") {
-        return true
+    if (V_Name == "admin") {
+        return true;
     } else {
-        return false
+        return false;
     }
 
 }
