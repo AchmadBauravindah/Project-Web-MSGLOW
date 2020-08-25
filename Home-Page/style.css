@@ -114,6 +114,8 @@ div.home h4 {
   margin-right: 45%;
 }
 
+
+/* !Halaman Products */
 /* lebar product 784px*/
 div.products {
   width: auto;
@@ -124,6 +126,7 @@ div.products {
   box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
   background-color: white;
   position: relative;
+  margin-bottom: 30px;
 }
 
 div.products h1 {
@@ -179,15 +182,65 @@ div.products img {
   color: #6b6b6b;
 }
 
+
+/* !Halaman Testimoni */
+div.testimonies {
+  width: auto;
+  height: 3250px;
+  padding: 15px;
+  margin: 1%;
+  /* BOX-SHADOW 1 2 3 4 -> 1 buat kanan, 2 buat bawah, 3 buat blur, 4 buat jarak blur*/
+  box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  position: relative;
+}
+
+div.testimonies h1 {
+  color: #ec3170;
+  text-align: center;
+}
+
+div.testimonies img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.testimoni-table {
+  border: 1px solid rgb(180, 180, 180);
+  text-align: center;
+  float: left;
+  position: relative;
+  width: auto;
+  padding: 5px;
+  /* Margin R 4px, margin left 8px buat meluruskan */
+  margin-right: 4px;
+  margin-left: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ec3170;
+  font-weight: bold;
+}
+
+.testimoni-table img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* !SideBar */
 div.sidebar {
-  margin: 5px;
+  margin: 1%;
   border: 1px dashed black;
   background-color: #ff9ec0;
   width: auto;
   height: 100%;
   padding: 10px;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 div.pemesanan {
@@ -203,7 +256,7 @@ div.pemesanan form {
 
 div.pemesanan h2 {
   height: auto;
-  margin-top: 0px;
+  margin-top: 0;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -266,22 +319,7 @@ div.apakah_yakin input {
 
 /* Edit Tombol submit */
 
-div.submmit-pemesanan {
-}
-
-/* Buat Requirednya */
-span.fill_it {
-  visibility: hidden;
-  margin-left: 165px;
-  position: absolute;
-  color: #ec3170;
-}
-
-span.Validasi_Input {
-  margin-left: 165px;
-  visibility: hidden;
-  color: #ec3170;
-}
+div.submmit-pemesanan {}
 
 div.footer {
   box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
@@ -297,7 +335,23 @@ div.footer p {
   display: abolute;
   text-align: center;
 }
+
 div.footer img {
   width: 150px;
   float: left;
+}
+
+
+/* !Buat Requirednya */
+span.fill_it {
+  visibility: hidden;
+  margin-left: 165px;
+  position: absolute;
+  color: #ec3170;
+}
+
+span.Validasi_Input {
+  margin-left: 165px;
+  visibility: hidden;
+  color: #ec3170;
 }
