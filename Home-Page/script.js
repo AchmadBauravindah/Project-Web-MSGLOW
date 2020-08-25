@@ -251,7 +251,7 @@ function checkAll() {
     let Valid_Nomer_HP = Validasi_Nomer_HP();
     let Valid_Jumlah_Produk = Validasi_Jumlah_Produk();
     if (CR == true && Valid_Email == true && Valid_Nomer_HP == true && Valid_Jumlah_Produk == true) {
-        alert("dh")
+        // alert("cek")
         return true;
     } else {
         return false;
