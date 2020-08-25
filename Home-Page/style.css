@@ -318,8 +318,25 @@ div.apakah_yakin input {
 }
 
 /* Edit Tombol submit */
+input.submit-pesanan {
+  margin-top: 15px;
+  margin-left: 270px;
 
-div.submmit-pemesanan {}
+}
+
+input.batalkan-pesanan {
+  margin-left: 5px;
+}
+
+input.submit-pesanan:hover {
+  background-color: #ff9ec0;
+  color: black;
+}
+
+input.batalkan-pesanan:hover {
+  background-color: #ec3170;
+  color: black;
+}
 
 div.footer {
   box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
