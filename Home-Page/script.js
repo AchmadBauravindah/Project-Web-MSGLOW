@@ -257,3 +257,18 @@ function checkAll() {
         return false;
     }
 }
+
+
+
+function cek() {
+    let tes = "<a href='javascript:cek2();'>Click</a> <script src='script.js'></script>"
+    return tes
+}
+
+function cek2() {
+    let link = "https: //api.whatsapp.com/send?phone=6285259961928&text=SSS"
+    // let nama = document.getElementById("Nama").value
+    // let All = link + nama
+    // console.log(All)
+    return link;
+}

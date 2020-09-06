@@ -83,7 +83,7 @@
                     Gede Adiputra) dan Nagita Slavina sebagai MS Glow for Beauty, perusahaan ini berada dibalik
                     kesuksesan kedua artis tersebut memecahkan rekor dari Museum Rekor Indonesia atas siaran langsung
                     live streaming di kanal berbagi video Youtube selama 30 jam yang pernah dilakukan oleh keduanya, 20
-                    Juni 2020.[1][2] Selain Raffi dan Nagita, beberapa artis lain juga pernah menjadi brand ambassador
+                    Juni 2020. Selain Raffi dan Nagita, beberapa artis lain juga pernah menjadi brand ambassador
                     MS Glow yaitu Olla Ramlan, Jessica Iskandar, Luna Maya, Oki Setiana Dewi, Shandy Aulia, Sarwendah,
                     Sarita Abdul Mukti, Sandra Dewi, Ivan Gunawan, Fitri Salhuteru, Jovi Adiguna, dan Verrel Bramasta.
                 </p>
@@ -266,11 +266,12 @@
             <div class="pemesanan" id="Halaman_Pemesanan">
                 <h2>Halaman Pemesanan</h2>
                 <!--FORM Pemesanan-->
-                <form action="submit.html" method="post" id="Pemesanan" name="Pemesanan" onsubmit="return checkAll();">
+                <form action="javascript:cek();" method="post" id="Pemesanan" name="Pemesanan"
+                    onsubmit="return checkAll();">
                     <!-- NAMA -->
                     <div class="nama">
                         <label for="Nama">Nama : </label>
-                        <input onkeypress="hide_required_nama();" type="text" id="Nama">
+                        <input onkeypress="hide_required_nama();" type="text" id="Nama" value="Cek">
                         <br>
                         <span class="fill_it" id="Nama_Required">Harap isi bidang ini!</span>
                         <span class="Validasi_Input"></span>
@@ -279,7 +280,8 @@
                     <!-- EMAIL -->
                     <div class="email">
                         <label for="Email">E-Mail : </label>
-                        <input onkeypress="hide_required_email(); hide_validasi_email();" type="text" id="Email">
+                        <input onkeypress="hide_required_email(); hide_validasi_email();" type="text" id="Email"
+                            value="Cek@">
                         <br>
                         <span class="fill_it" id="Email_Required">Harap isi bidang ini!</span>
                         <span class="Validasi_Input" id="Email_Validasi">Masukan Alamat E-Mail dengan Benar</span>
@@ -289,7 +291,7 @@
                     <div class="nomer_hp">
                         <label for="No_HP">No. HP : </label>
                         <input onkeypress="hide_required_nomer_hp(); hide_validasi_nomer_hp();" type="text"
-                            id="Nomer_HP">
+                            id="Nomer_HP" value="000">
                         <br>
                         <span class="fill_it" id="Nomer_HP_Required">Harap isi bidang ini!</span>
                         <span class="Validasi_Input" id="Nomer_HP_Validasi">Hanya Masukan Nomer</span>
@@ -316,7 +318,7 @@
                     <div class="jumlah_produk">
                         <label for="Jumlah_Produk">Jumlah Produk : </label>
                         <input onkeypress="hide_required_jumlah_produk(); hide_validasi_jumlah_produk();" type="text"
-                            id="Jumlah_Produk">
+                            id="Jumlah_Produk" value="000">
                         <br>
                         <span class="fill_it" id="Jumlah_Produk_Required">Harap isi bidang ini!</span>
                         <span class="Validasi_Input" id="Jumlah_Produk_Validasi">Hanya Masukan Nomer</span>
@@ -326,7 +328,7 @@
                         <label for="Jenis_Pengiriman">Jenis Pengiriman : </label>
                         <div class="opsi_jenis_pengiriman">
                             <input onclick="hide_required_jenis_pengiriman();" type="radio" name="Jenis_Pengiriman"
-                                id="Jenis_Pengiriman"><i>J&T</i>
+                                id="Jenis_Pengiriman" checked><i>J&T</i>
                             <input onclick="hide_required_jenis_pengiriman();" type="radio"
                                 name="Jenis_Pengiriman"><i>JNE</i>
                             <input onclick="hide_required_jenis_pengiriman();" type="radio"
@@ -343,7 +345,7 @@
 
                     <div class="text-alamat">
                         <textarea name="Alamat" id="Alamat" cols="30" rows="3"
-                            onkeypress="hide_required_alamat();"></textarea>
+                            onkeypress="hide_required_alamat();">Cek</textarea>
                         <br>
                         <span class="fill_it" id="Alamat_Required">Harap isi bidang ini!</span>
                         <span class="Validasi_Input"></span>
@@ -351,7 +353,8 @@
                     <!-- APAKAH ANDA YAKIN -->
                     <div class="apakah_yakin">
                         <label for="Apakah_Yakin">Apakah Anda Yakin?</label>
-                        <input onclick="hide_required_yakin();" type="checkbox" id="Apakah_Yakin" name="Apakah_Yakin">
+                        <input onclick="hide_required_yakin();" type="checkbox" id="Apakah_Yakin" name="Apakah_Yakin"
+                            checked>
                         <br>
                         <span class="fill_it" id="Apakah_Yakin_Required">Harap isi bidang ini!</span>
                         <span class="Validasi_Input"></span>
