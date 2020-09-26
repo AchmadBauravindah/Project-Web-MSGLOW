@@ -259,16 +259,37 @@ function checkAll() {
 }
 
 
+//! Untuk menampilkan cheked nya radio button jenis pengiriman
+function valueJenis_Pengiriman() {
+    let J_Pengiriman = document.getElementsByName('Jenis_Pengiriman');
 
-function cek() {
-    let tes = "<a href='javascript:cek2();'>Click</a> <script src='script.js'></script>"
-    return tes
+    for (let i = 0; i < J_Pengiriman.length; i++) {
+        if (J_Pengiriman[i].checked == true) {
+            return J_Pengiriman[i].value;
+        }
+    }
 }
 
-function cek2() {
-    let link = "https: //api.whatsapp.com/send?phone=6285259961928&text=SSS"
-    // let nama = document.getElementById("Nama").value
-    // let All = link + nama
-    // console.log(All)
-    return link;
+function redirect_WA() {
+    if (!checkAll()) {
+        return false;
+    }
+    let link = "https://api.whatsapp.com/send?phone=62895326852100&text=";
+    let nama = document.getElementById("Nama").value;
+    // let email = "Email : "document.getElementById("Email").value
+    // let nomer_hp = document.getElementById("Nomer_HP").value
+    let jenis_produk = document.getElementById("Jenis_Produk").value;
+    let jumlah_produk = document.getElementById("Jumlah_Produk").value;
+    let jenis_pengriman = valueJenis_Pengiriman();
+    let alamat = document.getElementById("Alamat").value;
+
+
+    let AllLink = link + "Halo Kak, Nama Saya " + "*" + nama + "*" + "%0A" + "Saya mau order " + "%0A" +
+        "Produk : " + "*" + jenis_produk + "*" + "%0A" +
+        "Jumlah : " + jumlah_produk + "%0A" +
+        "Jenis Pengiriman : " + jenis_pengriman + "%0A" +
+        "Alamat : " + alamat
+
+    let Redirect = location.replace(AllLink);
+    return Redirect;
 }

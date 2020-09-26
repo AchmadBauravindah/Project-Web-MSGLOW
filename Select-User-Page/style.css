@@ -1,7 +1,6 @@
-@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
 body {
-    background-color: ivory;
+    background-color: #e65686;
+    font-family: Lato, Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 div.header {
@@ -9,12 +8,14 @@ div.header {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #00000000;
+
 }
 
 div.header h1 {
     text-align: center;
     font-size: 30pt;
-    color: rgb(66, 63, 63);
+    color: #585858;
 }
 
 .btn {
@@ -23,6 +24,7 @@ div.header h1 {
     top: 70%;
     left: 50%;
     width: 80%;
+
 }
 
 .btn p {
@@ -36,9 +38,10 @@ div.admin-btn {
     height: 250px;
     float: left;
     border: 3px solid rgb(66, 63, 63);
+    border-radius: 24px;
     padding: 10px;
     background-color: rgb(245, 118, 118);
-    cursor: pointer;
+    box-shadow: 5px 0px 15px, -5px 0px 15px;
 }
 
 .admin-btn:hover {
@@ -50,6 +53,8 @@ div.admin-btn h1,
 div.guest-btn h1 {
     text-align: center;
     padding-top: 75px;
+    text-decoration: none;
+    color: antiquewhite;
 }
 
 div.guest-btn {
@@ -59,7 +64,6 @@ div.guest-btn {
     border: 3px solid rgb(66, 63, 63);
     padding: 10px;
     background-color: rgb(245, 118, 118);
-    cursor: pointer;
 }
 
 .guest-btn:hover {

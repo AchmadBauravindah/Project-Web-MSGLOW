@@ -300,15 +300,15 @@
                     <div class="jenis_produk">
                         <label for="Jenis_Produk">Jenis Produk : </label>
                         <select name="Jenis_Produk" id="Jenis_Produk" onclick="hide_required_jenis_produk();">
-                            <option value="">--Products MSGLOW--</option>
-                            <option value="1">Paket Whitening Series</option>
-                            <option value="2">Paket Acne Series</option>
-                            <option value="3">Paket Ultimate Series</option>
-                            <option value="4">Paket Luminous Series</option>
-                            <option value="5">Serum Acne</option>
-                            <option value="6">Serum Lifting</option>
-                            <option value="7">Serum Luminous</option>
-                            <option value="8">Serum Peeling</option>
+                            <option value=""> --Products MSGLOW-- </option>
+                            <option value="Paket Whitening Series">Paket Whitening Series</option>
+                            <option value="Paket Acne Series">Paket Acne Series</option>
+                            <option value="Paket Ultimate Series">Paket Ultimate Series</option>
+                            <option value="Paket Luminous Series">Paket Luminous Series</option>
+                            <option value="Serum Acne">Serum Acne</option>
+                            <option value="Serum Lifting">Serum Lifting</option>
+                            <option value="Serum Luminous">Serum Luminous</option>
+                            <option value="Serum Peeling">Serum Peeling</option>
                         </select>
                         <br>
                         <span class="fill_it" id="Jenis_Produk_Required">Harap isi bidang ini!</span>
@@ -323,16 +323,17 @@
                         <span class="fill_it" id="Jumlah_Produk_Required">Harap isi bidang ini!</span>
                         <span class="Validasi_Input" id="Jumlah_Produk_Validasi">Hanya Masukan Nomer</span>
                     </div>
+
                     <!-- JENIS PENGIRIMAN -->
                     <div class="jenis_pengiriman">
                         <label for="Jenis_Pengiriman">Jenis Pengiriman : </label>
                         <div class="opsi_jenis_pengiriman">
                             <input onclick="hide_required_jenis_pengiriman();" type="radio" name="Jenis_Pengiriman"
-                                id="Jenis_Pengiriman" checked><i>J&T</i>
-                            <input onclick="hide_required_jenis_pengiriman();" type="radio"
-                                name="Jenis_Pengiriman"><i>JNE</i>
-                            <input onclick="hide_required_jenis_pengiriman();" type="radio"
-                                name="Jenis_Pengiriman"><i>COD</i>
+                                id="Jenis_Pengiriman1" value="JnT"><i>J&T</i>
+                            <input onclick="hide_required_jenis_pengiriman();" type="radio" name="Jenis_Pengiriman"
+                                id="Jenis_Pengiriman2" value="JNE"><i>JNE</i>
+                            <input onclick="hide_required_jenis_pengiriman();" type="radio" name="Jenis_Pengiriman"
+                                id="Jenis_Pengiriman3" value="COD"><i>COD</i>
                         </div>
                         <br>
                         <span class="fill_it" id="Jenis_Pengiriman_Required">Harap isi bidang ini!</span>
@@ -345,7 +346,7 @@
 
                     <div class="text-alamat">
                         <textarea name="Alamat" id="Alamat" cols="30" rows="3"
-                            onkeypress="hide_required_alamat();">Cek</textarea>
+                            onkeypress="hide_required_alamat();"></textarea>
                         <br>
                         <span class="fill_it" id="Alamat_Required">Harap isi bidang ini!</span>
                         <span class="Validasi_Input"></span>
@@ -361,7 +362,8 @@
                     </div>
 
                     <div class="submit-pemesanan">
-                        <input type="submit" value="Pesan" class="submit-pesanan">
+                        <input type="submit" value="Pesan" class="submit-pesanan" name="submit" id="submit"
+                            onclick="redirect_WA();">
                         <input type="reset" value="Batalkan Pesanan" class="batalkan-pesanan">
                     </div>
                 </form>
