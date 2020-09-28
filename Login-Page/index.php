@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MSGLOW PEARLINDAH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="./images/logo.png" alt="LOGO" class="Logo">
+    <div class="login-box">
+        <form action="../Home-Page/index.html" method="POST" id="Login" name="Login" onsubmit="return checkAll();">
+            <!-- Bagian Username -->
+            <div class="text-box">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input class="user-box" type="text" id="Username" placeholder="Username" onkeypress="hide_required_name();">
+                <span class="hidden" id="Name_Required">Name is a required field</span>
+            </div>
+            <!-- Bagian Password -->
+            <div class="text-box">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input class="pass-box" type="password" id="Password" placeholder="Password" onkeypress="hide_required_password();">
+                <span class="hidden" id="Password_Required">Password is a required field</span>
+            </div>
+            <span class="hidden" id="Wrong_Username_Password">Username or Password are Wrong</span>
+            <!-- Bagian tombol submit -->
+            <input class="btn-login" type="submit" name="btn-login" id="btn-login" value="Login as Admin">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
