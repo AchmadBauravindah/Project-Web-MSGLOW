@@ -5,10 +5,7 @@ $msglow_paket = query("SELECT * FROM `msglow-paket`");
 $msglow_serum = query("SELECT * FROM `msglow-serum`");
 $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
 
-
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -17,7 +14,7 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
 <head>
     <title>MS GLOW Pearlindah</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="stylecss.css">
 </head>
 
 <body>
