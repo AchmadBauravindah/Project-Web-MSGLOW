@@ -1,3 +1,16 @@
+<?php
+require '../functions.php';
+
+$msglow_paket = query("SELECT * FROM `msglow-paket`");
+$msglow_serum = query("SELECT * FROM `msglow-serum`");
+$msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -113,132 +126,78 @@
                 <img src="./images/logo-underline.png" alt="MSGLOW">
                 <h1>MS GLOW Products</h1>
                 <div class="product-content">
+
+
                     <!-- PAKET MSGLOW -->
                     <h2>Paket MS Glow Beauty</h2>
-                    <!-- MS Glow Whitening Series -->
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/whitening-paket.png" alt="whitening-paket">
-                            <div>
-                                <i>MS Glow Whitening Series</i><br>
-                                <p class="harga-text">Rp. 300.000</p>
+                    <a href="" class="selengkapnya">Lihat Selengkapnya</a>
+                    <?php $stop = 0; ?>
+                    <?php foreach ($msglow_paket as $row) : ?>
+                        <?php $stop++; ?>
+                        <a href="#Pemesanan">
+                            <div class="product-table">
+                                <img src="./images/<?= $row['gambar']; ?>" alt="<?= $row['nama']; ?>">
+                                <div>
+                                    <i><?= $row['nama']; ?></i><br>
+                                    <p class="harga-text">Rp. <?= $row['harga']; ?></p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <!-- MS Glow Acne Series -->
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/acne-paket.png" alt="acne-paket">
-                            <div>
-                                <i>MS Glow Acne Series</i><br>
-                                <p class="harga-text">Rp. 300.000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- MS Glow Ultimate Series -->
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/ultimate-paket.png" alt="ultimate-paket">
-                            <div>
-                                <i>MS Glow Ultimate Series</i><br>
-                                <p class="harga-text">Rp. 300.000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- MS Glow Whitening Series -->
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/luminous-paket.png" alt="luminous-paket">
-                            <div>
-                                <i>MS Glow Luminous Series</i><br>
-                                <p class="harga-text">Rp. 300.000</p>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                        <?php if ($stop == 4) {
+                            break;
+                        } ?>
+
+                    <?php endforeach; ?>
+
+
                     <!-- SERUM WAJAH -->
                     <h2>Serum Wajah</h2>
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/serum-acne.jpg" alt="whitening-paket">
-                            <div>
-                                <i>MS Glow Acne Serum</i><br>
-                                <p class="harga-text">Rp. 100.000</p>
+                    <?php $stop = 0; ?>
+                    <?php foreach ($msglow_serum as $row) : ?>
+                        <?php $stop++; ?>
+                        <a href="#Pemesanan">
+                            <div class="product-table">
+                                <img src="./images/<?= $row['gambar']; ?>" alt="<?= $row['nama']; ?>">
+                                <div>
+                                    <i><?= $row['nama']; ?></i><br>
+                                    <p class="harga-text">Rp. <?= $row['harga']; ?></p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/serum-lifting.jpg" alt="acne-paket">
-                            <div>
-                                <i>MS Glow Lifting Serum</i><br>
-                                <p class="harga-text">Rp. 150.000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/serum-luminous.jpg" alt="ultimate-paket">
-                            <div>
-                                <i>MS Glow Luminous Serum</i><br>
-                                <p class="harga-text">Rp. 150.000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/serum-peeling.jpg" alt="luminous-paket">
-                            <div>
-                                <i>MS Glow Peeling Serum</i><br>
-                                <p class="harga-text">Rp. 150.000</p>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                        <?php if ($stop == 4) {
+                            break;
+                        } ?>
+
+                    <?php endforeach; ?>
+
+
                     <!--Kosmetik-->
                     <h2>Kosmetik</h2>
-                    <!-- JJ Glow -->
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/jj-glow.jpg" alt="jj-glow">
-                            <div>
-                                <i>JJ Glow</i><br>
-                                <p class="harga-text">Rp. 125.000</p>
+                    <?php $stop = 0; ?>
+                    <?php foreach ($msglow_kosmetik as $row) : ?>
+                        <?php $stop++; ?>
+                        <a href="#Pemesanan">
+                            <div class="product-table">
+                                <img src="./images/<?= $row['gambar']; ?>" alt="<?= $row['nama']; ?>">
+                                <div>
+                                    <i><?= $row['nama']; ?></i><br>
+                                    <p class="harga-text">Rp. <?= $row['harga']; ?></p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <!-- Red Jelly -->
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/red-jelly.jpg" alt="red-jelly">
-                            <div>
-                                <i>Red Jelly</i><br>
-                                <p class="harga-text">Rp. 300.000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Balm Juice -->
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/balm-juice.jpg" alt="balm-juice">
-                            <div>
-                                <i>Balm Juice</i><br>
-                                <p class="harga-text">Rp. 120.000</p>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Acne Spot -->
-                    <a href="#Pemesanan">
-                        <div class="product-table">
-                            <img src="./images/acne-spot.jpg" alt="acne-spot">
-                            <div>
-                                <i>Acne Spot Treatment</i><br>
-                                <p class="harga-text">Rp. 60.000</p>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                        <?php if ($stop == 4) {
+                            break;
+                        } ?>
+
+                    <?php endforeach; ?>
+
+
+
+
                 </div>
             </div>
 
-            <!-- !Halaman Testimoni -->
+            <!-- Halaman Testimoni -->
             <div class="testimonies" id="Testimoni">
                 <img src="./images/logo-underline.png" alt="MSGLOW">
                 <h1>MS Glow Testimoni</h1>

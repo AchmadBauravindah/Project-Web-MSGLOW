@@ -3,14 +3,6 @@ body {
   font-family: Lato, Serif, Arial;
 }
 
-div.box {
-  box-shadow: 5px 0px 15px, -5px 0px 15px;
-  background-color: #d1d1d1;
-  margin: 30px auto;
-  max-width: 800px;
-  min-width: 800px;
-}
-
 div.header {
   background-color: white;
   padding: 1px;
@@ -114,7 +106,6 @@ div.home h4 {
   margin-right: 45%;
 }
 
-
 /* !Halaman Products */
 /* lebar product 784px*/
 div.products {
@@ -152,6 +143,13 @@ div.products img {
   color: #494949;
 }
 
+a.selengkapnya {
+  margin-left: 100px;
+  color: #d1d1d1;
+  background-color: #ec3170;
+  font-size: large;
+}
+
 .product-table {
   border: 1px solid rgb(180, 180, 180);
   text-align: center;
@@ -176,8 +174,7 @@ div.products img {
 }
 
 .product-table:hover {
-  box-shadow: 5px 0px 15px,
-    -5px 0px 15px;
+  box-shadow: 5px 0px 15px, -5px 0px 15px;
 }
 
 .harga-text {
@@ -186,7 +183,6 @@ div.products img {
   font-weight: normal;
   color: #6b6b6b;
 }
-
 
 /* !Halaman Testimoni */
 div.testimonies {
@@ -326,7 +322,6 @@ div.apakah_yakin input {
 input.submit-pesanan {
   margin-top: 15px;
   margin-left: 270px;
-
 }
 
 input.batalkan-pesanan {
@@ -362,7 +357,6 @@ div.footer img {
   width: 150px;
   float: left;
 }
-
 
 /* !Buat Requirednya */
 span.fill_it {
