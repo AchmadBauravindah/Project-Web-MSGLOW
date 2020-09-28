@@ -175,6 +175,11 @@ div.products img {
   object-position: center;
 }
 
+.product-table:hover {
+  box-shadow: 5px 0px 15px,
+    -5px 0px 15px;
+}
+
 .harga-text {
   display: inline;
   text-align: left;
