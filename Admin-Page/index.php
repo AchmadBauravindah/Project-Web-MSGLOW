@@ -12,7 +12,7 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
 <html lang="id">
 
 <head>
-    <title>MS GLOW Pearlindah</title>
+    <title>Admin Page MS Glow</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -24,9 +24,9 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
         <div class="header">
             <div class="headerstack">
                 <img src="./images/logo.png" alt="Logo">
-                <a href="../Admin-Page/index.php">(Login As Admin)</a>
                 <div class="headerstackkuadrat">
                     <h1>PEARLINDAH</h1>
+                    <h3>Halaman Admin</h3>
                 </div>
             </div>
         </div>
@@ -137,6 +137,11 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
                                 <div>
                                     <i><?= $row['nama']; ?></i><br>
                                     <p class="harga-text">Rp. <?= $row['harga']; ?></p>
+                                    <a class="btn-edit" href="edit_produk.php?id=<?= $row["id"]; ?>&jenis=`msglow-paket`">
+                                        Edit
+                                    </a>
+                                    <a class="btn-hapus" href="hapus_produk.php?id=<?= $row["id"] ?>&jenis=`msglow-paket`" onclick=" return confirm('Apakah anda yakin?');">Hapus</a>
+
                                 </div>
                             </div>
                         </a>
@@ -145,6 +150,9 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
                         } ?>
 
                     <?php endforeach; ?>
+                    <!-- Disini akan dikirimkan sebuah data dengan variabel jenis agar bisa dikondisikan lagi  -->
+                    <a href="tambah_produk.php?jenis=`msglow-paket`">Tambah Produk</a>
+                    <!-- Disini akan dikirimkan data nama dan jenis, nama untuk query nya dan jenis untuk displaynya -->
                     <a href="produk_lengkap.php?nama=`msglow-paket`&jenis=Paket%20MS%20Glow" class="selengkapnya">Lihat Selengkapnya>>></a>
 
 
@@ -167,6 +175,7 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
                         } ?>
 
                     <?php endforeach; ?>
+                    <a href="tambah_produk.php?jenis=`msglow-serum`">Tambah Produk</a>
                     <a href="produk_lengkap.php?nama=`msglow-serum`&jenis=Serum%20Wajah" class="selengkapnya">Lihat Selengkapnya>>></a>
 
 
@@ -189,6 +198,7 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
                         } ?>
 
                     <?php endforeach; ?>
+                    <a href="tambah_produk.php?jenis=`msglow-kosmetikt`">Tambah Produk</a>
                     <a href="produk_lengkap.php?nama=`msglow-kosmetik`&jenis=Kosmetik" class="selengkapnya">Lihat Selengkapnya>>></a>
 
                 </div>

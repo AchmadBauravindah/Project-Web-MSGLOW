@@ -36,7 +36,7 @@ div.headerstack a {
 
 
 div.headerstackkuadrat {
-  height: 70px;
+  height: auto;
   background-color: #5e5e5e;
   padding: 5px;
   /* Border radius digunakan agar border pojok tidak runcing */
@@ -47,6 +47,12 @@ div.headerstackkuadrat h1 {
   text-align: center;
   vertical-align: center;
   color: silver;
+}
+
+div.headerstackkuadrat h3 {
+  color: silver;
+  font-size: 30px;
+
 }
 
 div.menu {
@@ -161,8 +167,7 @@ div.products img {
 
 a.selengkapnya {
   color: #ec3170;
-  margin-left: 580px;
-
+  margin-left: 470px;
 }
 
 .product-table {
@@ -197,6 +202,20 @@ a.selengkapnya {
   text-align: left;
   font-weight: normal;
   color: #6b6b6b;
+}
+
+.btn-edit {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  margin-left: 155px;
+}
+
+.btn-hapus {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  margin-left: 146px;
 }
 
 /* !Halaman Testimoni */
