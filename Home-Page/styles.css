@@ -3,6 +3,14 @@ body {
   font-family: Lato, Serif, Arial;
 }
 
+div.box {
+  box-shadow: 5px 0px 15px, -5px 0px 15px;
+  background-color: #d1d1d1;
+  margin: 30px auto;
+  max-width: 800px;
+  min-width: 800px;
+}
+
 div.header {
   background-color: white;
   padding: 1px;
@@ -110,7 +118,6 @@ div.home h4 {
 /* lebar product 784px*/
 div.products {
   width: auto;
-  height: 2600px;
   padding: 15px;
   margin: 1%;
   /* BOX-SHADOW 1 2 3 4 -> 1 buat kanan, 2 buat bawah, 3 buat blur, 4 buat jarak blur*/
@@ -118,6 +125,7 @@ div.products {
   background-color: white;
   position: relative;
   margin-bottom: 30px;
+  clear: both;
 }
 
 div.products h1 {
@@ -144,8 +152,9 @@ div.products img {
 }
 
 a.selengkapnya {
-  margin-left: 100px;
-  color: #d1d1d1;
+  color: #ec3170;
+  margin-left: 580px;
+
 }
 
 .product-table {
@@ -236,7 +245,7 @@ div.sidebar {
   border: 1px dashed black;
   background-color: #ff9ec0;
   width: auto;
-  height: 100%;
+  height: auto;
   padding: 10px;
   position: relative;
   margin-bottom: 30px;

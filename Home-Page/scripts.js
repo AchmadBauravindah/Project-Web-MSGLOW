@@ -274,7 +274,7 @@ function redirect_WA() {
     if (!checkAll()) {
         return false;
     }
-    let link = "https://api.whatsapp.com/send?phone=62895326852100&text=";
+    let link = "https://api.whatsapp.com/send?phone=6285790962643&text=";
     let nama = document.getElementById("Nama").value;
     // let email = "Email : "document.getElementById("Email").value
     // let nomer_hp = document.getElementById("Nomer_HP").value

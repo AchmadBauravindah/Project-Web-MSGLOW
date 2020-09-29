@@ -14,7 +14,7 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
 <head>
     <title>MS GLOW Pearlindah</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="stylecss.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -127,7 +127,6 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
 
                     <!-- PAKET MSGLOW -->
                     <h2>Paket MS Glow Beauty</h2>
-                    <a href="" class="selengkapnya">Lihat Selengkapnya</a>
                     <?php $stop = 0; ?>
                     <?php foreach ($msglow_paket as $row) : ?>
                         <?php $stop++; ?>
@@ -145,6 +144,7 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
                         } ?>
 
                     <?php endforeach; ?>
+                    <a href="produk_lengkap.php?nama=`msglow-paket`&jenis=Paket%20MS%20Glow" class="selengkapnya">Lihat Selengkapnya>>></a>
 
 
                     <!-- SERUM WAJAH -->
@@ -166,6 +166,7 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
                         } ?>
 
                     <?php endforeach; ?>
+                    <a href="produk_lengkap.php?nama=`msglow-serum`&jenis=Serum%20Wajah" class="selengkapnya">Lihat Selengkapnya>>></a>
 
 
                     <!--Kosmetik-->
@@ -187,9 +188,7 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
                         } ?>
 
                     <?php endforeach; ?>
-
-
-
+                    <a href="produk_lengkap.php?nama=`msglow-kosmetik`&jenis=Kosmetik" class="selengkapnya">Lihat Selengkapnya>>></a>
 
                 </div>
             </div>
@@ -320,7 +319,7 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
             <p>MS Glow Pearlindah</p>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
