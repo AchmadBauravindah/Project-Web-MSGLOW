@@ -14,7 +14,7 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
 <head>
     <title>MS GLOW Pearlindah</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -24,6 +24,7 @@ $msglow_kosmetik = query("SELECT * FROM `msglow-kosmetik`");
         <div class="header">
             <div class="headerstack">
                 <img src="./images/logo.png" alt="Logo">
+                <a href="">(Login As Admin)</a>
                 <div class="headerstackkuadrat">
                     <h1>PEARLINDAH</h1>
                 </div>

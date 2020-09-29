@@ -16,6 +16,10 @@ div.header {
   padding: 1px;
 }
 
+div.header h2 {
+  color: white;
+}
+
 div.headerstack {
   background-color: #ec3170;
   border: 1px solid black;
@@ -23,9 +27,13 @@ div.headerstack {
   padding: 5px;
 }
 
-div.header h2 {
-  color: white;
+.headerstack a {
+  /* margin-left: 1000px; */
+  position: absolute;
+  color: #494949;
 }
+
+
 
 div.headerstackkuadrat {
   height: 70px;
